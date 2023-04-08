@@ -38,23 +38,23 @@ services:
 #     sync: false
 #   - key: LINE_CHANNEL_SECRET
 #     sync: false
- - type: web
-   name: line-bot-python-simple-server
-   env: python
-   repo: https://github.com/line/line-bot-sdk-python.git
-   buildCommand: cd examples/simple-server-echo;pip install -r requirements.txt
-   startCommand: cd examples/simple-server-echo;python app.py
-   plan: free
-   autoDeploy: false
-   envVars:
-   - key: LINE_CHANNEL_ACCESS_TOKEN
-     sync: false
-   - key: LINE_CHANNEL_SECRET
-     sync: false
+# - type: web
+#   name: line-bot-python-simple-server
+#   env: python
+#   repo: https://github.com/line/line-bot-sdk-python.git
+#   buildCommand: cd examples/simple-server-echo;pip install -r requirements.txt
+#   startCommand: cd examples/simple-server-echo;python app.py
+#   plan: free
+#   autoDeploy: false
+#   envVars:
+#  - key: LINE_CHANNEL_ACCESS_TOKEN
+#     sync: false
+#   - key: LINE_CHANNEL_SECRET
+#     sync: false
  - type: web
    name: line-bot-python-aiohttp
    env: python
-   repo: https://github.com/line/line-bot-sdk-python.git
+   repo:https://github.com/anh1008/line-bot-sdk-python-original.git
    buildCommand: cd examples/aiohttp-echo;pip install -r requirements.txt
    startCommand: cd examples/aiohttp-echo;python app.py
    plan: free
