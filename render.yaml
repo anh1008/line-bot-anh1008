@@ -54,7 +54,7 @@ services:
  - type: web
    name: line-bot-python-aiohttp
    env: python
-   repo:https://github.com/anh1008/line-bot-sdk-python-original.git
+   repo: https://github.com/anh1008/line-bot-sdk-python-original.git
    buildCommand: cd examples/aiohttp-echo;pip install -r requirements.txt
    startCommand: cd examples/aiohttp-echo;python app.py
    plan: free
